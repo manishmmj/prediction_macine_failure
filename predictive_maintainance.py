@@ -1,4 +1,4 @@
-from flask import flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template
 import joblib
 import numpy as np
 from sklearn.preprocessing import StandardScaler
