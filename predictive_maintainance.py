@@ -1,11 +1,11 @@
-from flask import Flask, request, jsonify, render_template
+from flask import flask, request, jsonify, render_template
 import joblib
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
 
 # Initialize Flask app
-app = Flask(__name__)
+app = flask(__name__)
 
 # Load the saved model and scaler
 model = joblib.load("best_maintenance_model.pkl")
